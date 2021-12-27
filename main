@@ -1,0 +1,50 @@
+cd ~/catkin_ws/src/
+
+catkin_create_pkg test_topic_msg std_msgs rospy
+
+cd ..
+
+catkin_make
+
+------------------------
+cd ~/catkin_ws/src/test_topic_msg
+
+mkdir msg
+
+cd msg
+
+gedit Complex.msg
+
+------------------------
+cd ~/catkin_ws/src/test_topic_msg
+
+gedit CMakeLists.txt
+
+gedit package.xml.
+
+------------------------
+cd ~/catkin_ws/src/test_topic_msg/src
+
+gedit topic_publisher.py
+
+gedit topic_subscriber.py
+
+chmod 777 *
+
+rosrun topic_publisher.py
+
+-----another terminal---
+
+rosrun topic_subscriber.py
+
+cd ~/catkin_ws/src/test_topic_msg/src
+
+gedit message_publisher.py
+
+gedit message_subscriber.py
+
+chmod 777 *
+
+rosrun test_topic_msg message_pulisher.py
+
+
