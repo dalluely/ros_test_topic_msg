@@ -20,7 +20,7 @@ cd ~/catkin_ws/src/test_topic_msg
 
 gedit CMakeLists.txt
 
-gedit package.xml.
+gedit package.xml
 
 ------------------------
 cd ~/catkin_ws/src/test_topic_msg/src
