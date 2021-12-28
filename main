@@ -47,4 +47,6 @@ chmod 777 *
 
 rosrun test_topic_msg message_pulisher.py
 
+-------------------
+rosrun 에서 import에러가 발생 시  catkin_make 하면 해결이 되긴한다....
 
